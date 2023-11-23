@@ -17,6 +17,10 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #f6f9ff;
   color: #444444;
+  background-image: url('../img/wallpaper.png'); /* Replace 'path/to/your/wallpaper.jpg' with the actual path to your wallpaper image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -1241,6 +1245,9 @@ h6 {
 
 li{
   padding-bottom: 8px;
+  padding-right: 8px;
+  display: inline;
+  float: left;
 }
 
 #my-video {
