@@ -1232,9 +1232,16 @@ h6 {
   color: #012970;
 }
 
-img {
+.div-img{
   border-radius: 12%;
-  }
+  width: 166,5px;
+    height: 264px;
+    border: 1px solid;
+}
+
+li{
+  padding-bottom: 8px;
+}
 
 
 
