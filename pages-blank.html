@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/fruitsrace.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -25,6 +25,8 @@
   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -85,6 +87,7 @@
        
       </div>
     </div> -->
+
 
     <section class="section">
       <div class="row">
@@ -152,12 +155,22 @@
             </div>
           </div>
 
+
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Presentation</h5>
               <p>Click on the video below to have a preview of the game</p>
-
-              <iframe width="660" height="315" src="https://www.youtube.com/watch?v=0j1UDBqR-oM?rel=0" frameborder="0" allowfullscreen></iframe>
+              <video
+              id="my-video"
+              class="video-js"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="MY_VIDEO_POSTER.jpg"
+              data-setup="{}"
+            >
+              <source src="/assets/video/api.mp4" type="video/mp4" />
             </div>
           </div>
 
@@ -167,7 +180,18 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Cards </h5>
+              <p>There are 5 types of cards: </p>
+              <ul>
+                <li><img src="assets/img/fraise.png" alt=""> +4 points</li>
+                <li><img src="assets/img/orange.png" alt=""> +3 points </li>
+                <li>Each card has a number of points that corresponds to the fruit on the card. </li>
+                <li>Each card has a number that corresponds to the square on the game board. </li>
+                <li>Each card has a color that corresponds to the color of the square on the game board. </li>
+              </ul>
+              
+              
               <p>The players select their pawn then they roll the dice. The higher roller goes first. Everybody starts at the same position. </p>
+              
             </div>
           </div>
 
