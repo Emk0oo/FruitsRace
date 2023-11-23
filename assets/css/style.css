@@ -1259,6 +1259,9 @@ li{
   height: auto;
 }
 
+.align-center {
+  text-align: center;
+}
 
 
 .img-hover img {
